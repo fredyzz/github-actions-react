@@ -19,6 +19,12 @@ jobs:
           echo test, and deploy your project.
           echo "Job Context: $JOB_CONTEXT"
 
+      - name: Install dependencies
+        run: |
+          echo "Installing dependencies"
+          npm install
+          echo "Dependencies installed"   
+
       - name: Run tests
         run: |
           echo "Running tests"
