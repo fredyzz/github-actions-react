@@ -18,3 +18,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo "Job Context: $JOB_CONTEXT"
+
+      - name: Run tests
+        run: |
+          echo "Running tests"
+          npm test
+          echo "Tests passed"
